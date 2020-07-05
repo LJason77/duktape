@@ -60,7 +60,7 @@ def exec_print_stdout(cmd, input=None):
     ret = exec_get_stdout(cmd, input=input, print_stdout=True)
 
 def mkdir(path):
-    os.mkdir(path)
+    os.makedirs(path)
 
 def copy_file(src, dst):
     with open(src, 'rb') as f_in:
